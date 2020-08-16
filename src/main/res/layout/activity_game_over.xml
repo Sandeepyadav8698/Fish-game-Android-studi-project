@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg"
+    tools:context=".GameOverActivity">
+
+    <TextView
+        android:id="@+id/gameresult"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="150dp"
+        android:textColor="#fff"
+        android:textSize="35sp"
+        android:textStyle="bold" />
+    <Button
+        android:id="@+id/playAgain"
+        android:layout_width="237dp"
+        android:layout_height="61dp"
+        android:layout_below="@id/gameresult"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/rounded_corner"
+        android:onClick="playAgain"
+        android:text="Play Again"
+        android:textColor="#16CDE4"
+        android:textSize="23sp" />
+    <Button
+        android:id="@+id/mainmenu"
+        android:layout_width="237dp"
+        android:layout_height="61dp"
+        android:layout_below="@id/playAgain"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/rounded_corner"
+        android:onClick="menu"
+        android:text="Menu"
+        android:textColor="#16CDE4"
+        android:textSize="23sp" />
+</RelativeLayout>
